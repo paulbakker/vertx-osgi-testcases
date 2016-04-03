@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1459688212000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1459693754000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="com.fasterxml.jackson.core.jackson-annotations"/>
@@ -3423,6 +3423,441 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.mongodb.driver-async"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="3b25af996db5b627541782cb4c35375cb9f489904a3a41806d2a719408a7faac"/>
+      <attribute name="url" value="org.mongodb.driver-async/org.mongodb.driver-async-3.2.2.jar"/>
+      <attribute name="size" type="Long" value="102901"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.mongodb.driver-async"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.mongodb.driver-async"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.async.client"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.driver-async"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.async,com.mongodb.bulk,com.mongodb.client.model,com.mongodb.client.result,com.mongodb.connection,org.bson,org.bson.codecs.configuration,org.bson.conversions"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.annotations)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.assertions)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.async)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.binding)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.bulk)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.client.model)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.client.model.geojson.codecs)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.client.result)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.connection)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.connection.netty)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.event)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.internal.async)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.management)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.operation)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.assertions)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.codecs)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.codecs.configuration)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.conversions)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="2d2890279767a61f2cb1a0b17a3581b437bc3762df900a0f9dc1122e9292b387"/>
+      <attribute name="url" value="org.mongodb.mongo-java-driver/org.mongodb.mongo-java-driver-3.2.2.jar"/>
+      <attribute name="size" type="Long" value="1484724"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.annotations,com.mongodb.bulk,com.mongodb.client,com.mongodb.connection,com.mongodb.event,javax.net,org.bson,org.bson.codecs,org.bson.codecs.configuration,org.bson.conversions,org.bson.io,org.bson.json,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.annotations"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.assertions"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.async"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.async"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.binding"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.async,com.mongodb.connection"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.bulk"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.bulk,com.mongodb.client.model,com.mongodb.client.result,org.bson,org.bson.codecs.configuration,org.bson.conversions"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.gridfs"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.client,com.mongodb.client.gridfs.model,org.bson,org.bson.conversions,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.gridfs.model"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.model"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.client.model.geojson,org.bson,org.bson.conversions"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.model.geojson"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.annotations"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.model.geojson.codecs"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.client.model.geojson,org.bson,org.bson.codecs,org.bson.codecs.configuration"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.client.result"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.connection"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.async,com.mongodb.binding,com.mongodb.bulk,com.mongodb.event,com.mongodb.internal.connection,com.mongodb.selector,javax.net,org.bson,org.bson.codecs,org.bson.io,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.connection.netty"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.connection,io.netty.buffer,io.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.diagnostics.logging"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.event"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.annotations,com.mongodb.connection,org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.gridfs"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,org.bson,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.async"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.async,com.mongodb.diagnostics.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.authentication"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.connection"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.connection,javax.net.ssl,org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.management.jmx"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.management"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.thread"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.internal.validator"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.management"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb.event"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.operation"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.async,com.mongodb.binding,com.mongodb.bulk,com.mongodb.client.model,com.mongodb.connection,org.bson,org.bson.codecs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.selector"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.annotations,com.mongodb.connection"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.mongodb.util"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson.codecs,org.bson.codecs.configuration,org.bson.conversions,org.bson.io,org.bson.json,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.assertions"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.codecs"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson,org.bson.codecs.configuration,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.codecs.configuration"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson.codecs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.conversions"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson,org.bson.codecs.configuration"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.diagnostics"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.io"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.json"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson,org.bson.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.types"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+      <directive name="uses" value="org.bson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.bson.util"/>
+      <attribute name="version" type="Version" value="3.2.2"/>
+      <attribute name="bundle-symbolic-name" value="org.mongodb.mongo-java-driver"/>
+      <attribute name="bundle-version" type="Version" value="3.2.2"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.bind)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.sasl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.callback)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.ietf.jgss)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.bootstrap)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.buffer)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.channel.socket.nio)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.ssl)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.handler.timeout)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.util.concurrent)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.mvel2"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="2.2.7.Final"/>
@@ -3746,61 +4181,61 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="vertx-auth-common"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="version" type="Version" value="3.3.0.201604031336"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="504a04b97c8372b72ac51a29e9828357be8e6b4b3aaba3791f5ac17b3ad7ff2e"/>
+      <attribute name="osgi.content" value="3102c58b80e6389eabc1a30843df42022792ac6bc31d8a7390454c4f60674777"/>
       <attribute name="url" value="vertx-auth-common/vertx-auth-common-3.3.0.jar"/>
-      <attribute name="size" type="Long" value="27881"/>
+      <attribute name="size" type="Long" value="27862"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.ext.auth"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
       <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.shareddata.impl"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.auth"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
       <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.auth"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.auth.common"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
       <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.auth"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.auth"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
       <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.auth,rx"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="vertx-auth-common"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="vertx-auth-common-js"/>
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="vertx-auth-common"/>
-      <attribute name="bundle-version" type="Version" value="3.3.0.201604022122"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031336"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
@@ -3816,10 +4251,6 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime.typehandling)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
-      <directive name="resolution" value="optional"/>
-    </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.auth)"/>
       <directive name="resolution" value="optional"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
@@ -3853,6 +4284,9 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.auth)"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
@@ -3967,6 +4401,237 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-auth-jwt"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201604031339"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="33854dd3d4fac5f3c84bd4f88a0b747ec7e1a3bb0032d1e2b35def9fa6d3642a"/>
+      <attribute name="url" value="vertx-auth-jwt/vertx-auth-jwt-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="25133"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.auth.jwt"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json,io.vertx.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.auth.jwt"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+      <directive name="uses" value="groovy.lang,io.vertx.groovy.core,io.vertx.groovy.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.auth.jwt"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+      <directive name="uses" value="io.vertx.core.json,io.vertx.ext.auth.jwt,io.vertx.rxjava.core,io.vertx.rxjava.ext.auth"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-jwt"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-jwt-js"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jwt"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031339"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.groovy.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.buffer)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.rxjava.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-auth-mongo"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201604031410"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="d72389c60dba6f144a94fa527e4477cf01865b7be3d9a80bedae06414c07b7ec"/>
+      <attribute name="url" value="vertx-auth-mongo/vertx-auth-mongo-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="35502"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.auth.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json,io.vertx.ext.auth,io.vertx.ext.mongo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.auth.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.auth.mongo,io.vertx.groovy.ext.auth,io.vertx.groovy.ext.mongo"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.auth.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.auth.mongo,io.vertx.rxjava.ext.auth,io.vertx.rxjava.ext.mongo,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-mongo-js"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-mongo"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031410"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.groovy.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.mongo)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.mongo)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.rxjava.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.mongo)"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
@@ -4111,6 +4776,175 @@
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
       <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-mongo-client"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201604031420"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="8f8856080298611d21be12fefb9398ec6e533295511b592900a4df4a2b5b6883"/>
+      <attribute name="url" value="vertx-mongo-client/vertx-mongo-client-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="78342"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.mongo.impl.codec"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="io.vertx.core.json,org.bson.codecs,org.bson.codecs.configuration"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.mongo.impl.codec.json"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="io.vertx.core.json,org.bson,org.bson.codecs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.mongo.impl.config"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="com.mongodb,com.mongodb.async.client,com.mongodb.connection,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.core.json,io.vertx.ext.mongo,io.vertx.groovy.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.mongo,io.vertx.rxjava.core,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-mongo"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-mongo-js"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-mongo-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031420"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime.typehandling)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.async)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.async.client)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.client.model)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.client.result)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.mongodb.connection)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.mongo.impl.codec.json)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.ext.mongo.impl.config)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.codecs)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.codecs.configuration)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.conversions)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.bson.types)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
