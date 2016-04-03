@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1459683683000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1459688212000" name="Local" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="com.fasterxml.jackson.core.jackson-annotations"/>
@@ -1362,9 +1362,9 @@
       <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="eb0f2b216c055d048ac003a9fb4db5120a14fd6080beb59762f78af219ff6bfa"/>
+      <attribute name="osgi.content" value="30a5117e13f2997ba01f12f917650e2eb96175d232f879bdcd78aaeb1841aa05"/>
       <attribute name="url" value="io.vertx.core/io.vertx.core-3.3.0.jar"/>
-      <attribute name="size" type="Long" value="842888"/>
+      <attribute name="size" type="Long" value="857139"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
@@ -1476,7 +1476,7 @@
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
       <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
-      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.streams"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.buffer,io.vertx.core.http,io.vertx.core.json,io.vertx.core.metrics,io.vertx.core.net,io.vertx.core.streams"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.core.eventbus.impl"/>
@@ -1553,7 +1553,7 @@
       <attribute name="version" type="Version" value="3.3.0"/>
       <attribute name="bundle-symbolic-name" value="io.vertx.core"/>
       <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
-      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.spi.launcher"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.cli,io.vertx.core.json,io.vertx.core.spi.launcher"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="io.vertx.core.impl.launcher.commands"/>
@@ -1700,13 +1700,13 @@
       <directive name="resolution" value="optional"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.module)(version&gt;=2.7.0)(!(version&gt;=3.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=io.netty.bootstrap)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))"/>
@@ -3024,6 +3024,405 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.hsqldb.hsqldb"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="e805a86c679b0bdb0e670965bcb9abf7413035ab60b758248d40e53475b9e0b4"/>
+      <attribute name="url" value="org.hsqldb.hsqldb/org.hsqldb.hsqldb-2.3.3.jar"/>
+      <attribute name="size" type="Long" value="1493168"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.server,org.hsqldb.jdbc,org.hsqldb.types,org.hsqldb.rowio,org.hsqldb.result,org.hsqldb.persist,org.hsqldb.error,org.hsqldb.navigator,org.hsqldb.map,org.hsqldb.lib,org.hsqldb.rights,org.hsqldb.index,org.hsqldb.dbinfo,org.hsqldb.lib.java,org.hsqldb.scriptio"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.auth"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.types,org.hsqldb.jdbc,org.hsqldb.lib,javax.security.auth.callback,javax.security.auth.login,javax.security.auth,javax.naming.directory,javax.naming,javax.naming.ldap,javax.net.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.dbinfo"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.rights,org.hsqldb.resources,org.hsqldb,org.hsqldb.map,org.hsqldb.persist,org.hsqldb.lib,org.hsqldb.index,org.hsqldb.types,org.hsqldb.result"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.error"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.resources,org.hsqldb,org.hsqldb.result,org.hsqldb.lib"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.index"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.persist,org.hsqldb.types,org.hsqldb,org.hsqldb.navigator,org.hsqldb.rights,org.hsqldb.error,org.hsqldb.lib,org.hsqldb.rowio"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.jdbc"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.types,org.hsqldb,org.hsqldb.navigator,org.hsqldb.result,org.hsqldb.lib.java,org.hsqldb.lib,org.hsqldb.error,javax.sql,org.hsqldb.persist,javax.naming,javax.naming.spi,org.hsqldb.jdbc.pool,javax.xml.parsers,org.w3c.dom,org.xml.sax,javax.xml.stream,javax.xml.transform.stax,javax.xml.transform.dom,org.w3c.dom.bootstrap,javax.xml.transform,javax.xml.bind.util,javax.xml.transform.stream,javax.xml.transform.sax"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.jdbc.pool"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="javax.sql,org.hsqldb.jdbc,org.hsqldb.lib,javax.naming,javax.transaction.xa,org.hsqldb.error,org.hsqldb"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.lib"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.lib.java,org.hsqldb.map,org.hsqldb"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.lib.java"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.lib.tar"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.lib"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.lib.tar.rb"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.map"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.lib,org.hsqldb.types"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.navigator"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb,org.hsqldb.error,org.hsqldb.rowio,org.hsqldb.result,org.hsqldb.types,org.hsqldb.lib,org.hsqldb.index,org.hsqldb.persist"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.persist"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.map,org.hsqldb.rowio,org.hsqldb.lib,org.hsqldb,org.hsqldb.error,javax.crypto.spec,javax.crypto,org.hsqldb.scriptio,org.hsqldb.types,org.hsqldb.result,org.hsqldb.navigator,org.hsqldb.rights,org.hsqldb.index,org.hsqldb.lib.tar,org.hsqldb.dbinfo,org.hsqldb.lib.java"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.resources"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.lib"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.result"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.persist,org.hsqldb.types,org.hsqldb.error,org.hsqldb,org.hsqldb.navigator,org.hsqldb.map,org.hsqldb.rowio,org.hsqldb.lib"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.rights"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.types,org.hsqldb.error,org.hsqldb,org.hsqldb.lib,org.hsqldb.result"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.rowio"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.types,org.hsqldb.error,org.hsqldb.lib,org.hsqldb,org.hsqldb.map,org.hsqldb.persist"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.sample"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.scriptio"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.persist,org.hsqldb,org.hsqldb.lib.java,org.hsqldb.error,org.hsqldb.rowio,org.hsqldb.lib,org.hsqldb.types,org.hsqldb.map,org.hsqldb.result,org.hsqldb.navigator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.server"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.persist,org.hsqldb.jdbc,org.hsqldb.error,org.hsqldb,javax.net,javax.security.cert,javax.net.ssl,org.hsqldb.lib,org.hsqldb.types,org.hsqldb.result,org.hsqldb.resources,org.hsqldb.lib.java,org.hsqldb.map,org.hsqldb.rowio,org.hsqldb.navigator,javax.servlet,javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.types"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="org.hsqldb.jdbc,org.hsqldb.error,org.hsqldb,org.hsqldb.lib,org.hsqldb.map,org.hsqldb.result,org.hsqldb.lib.java,org.hsqldb.persist,org.hsqldb.rights"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.hsqldb.util"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.hsqldb.hsqldb"/>
+      <attribute name="bundle-version" type="Version" value="2.3.3"/>
+      <directive name="uses" value="javax.swing,javax.swing.border,org.hsqldb.lib.java,org.hsqldb.lib,javax.swing.tree,javax.swing.table,javax.swing.event"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.crypto.spec)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.directory)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.ldap)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.spi)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.callback)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.auth.login)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.security.cert)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet.http)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.border)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.event)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.table)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.tree)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.transaction.xa)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.bind.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.stream)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.dom)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.sax)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stax)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stream)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.dbinfo)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.error)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.index)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.jdbc)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.jdbc.pool)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.lib)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.lib.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.lib.tar)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.lib.tar.rb)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.map)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.navigator)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.persist)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.resources)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.result)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.rights)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.rowio)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.sample)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.scriptio)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.server)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.types)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.hsqldb.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom.bootstrap)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.mvel2"/>
       <attribute name="type" value="osgi.bundle"/>
       <attribute name="version" type="Version" value="2.2.7.Final"/>
@@ -3454,6 +3853,356 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-auth-jdbc"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.201604031218"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="ef4ef54117c3efb5df32dc4f074d18ed55288f4bbf17f793c9d86a88a2690661"/>
+      <attribute name="url" value="vertx-auth-jdbc/vertx-auth-jdbc-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="21773"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.auth.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json,io.vertx.ext.auth,io.vertx.ext.jdbc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.auth.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+      <directive name="uses" value="groovy.lang,io.vertx.groovy.ext.auth,io.vertx.groovy.ext.jdbc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.auth.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+      <directive name="uses" value="io.vertx.ext.auth.jdbc,io.vertx.rxjava.ext.auth,io.vertx.rxjava.ext.jdbc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="vertx-auth-jdbc-js"/>
+      <attribute name="version" type="Version" value="3.3.0"/>
+      <attribute name="bundle-symbolic-name" value="vertx-auth-jdbc"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.201604031218"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.ext.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.rxjava.ext.jdbc)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.ext.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.groovy.ext.jdbc)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.buffer)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.auth)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.jdbc)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-jdbc-client"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="307c357cb79f6505a131a4151206126cba246a9ac90df333a435a9c6e21b3fa6"/>
+      <attribute name="url" value="vertx-jdbc-client/vertx-jdbc-client-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="46371"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json,io.vertx.ext.sql,javax.sql"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.sql,io.vertx.groovy.core,io.vertx.groovy.ext.sql"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.jdbc"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.jdbc,io.vertx.rxjava.core,io.vertx.rxjava.ext.sql,rx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.jdbc.spi"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-jdbc-client"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core.json,javax.sql"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.impl)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.logging)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.shareddata)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.mchange.v2.c3p0)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.jolbox.bonecp)(version&gt;=0.8.0)(!(version&gt;=1.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.zaxxer.hikari)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.jdbc.spi)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.groovy.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.groovy.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.rxjava)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rxjava.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.rxjava.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime.typehandling)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="vertx-sql-common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="25d6acab80d9c5533f10f1b3ccd3b76cc77b6c6c2bcf4ccee2f01f367e381b1c"/>
+      <attribute name="url" value="vertx-sql-common/vertx-sql-common-3.3.0.jar"/>
+      <attribute name="size" type="Long" value="31690"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="vertx-sql-common"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="vertx-sql-common"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.ext.sql"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-sql-common"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.codegen.annotations,io.vertx.core,io.vertx.core.json"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.groovy.ext.sql"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-sql-common"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="groovy.lang,io.vertx.core,io.vertx.ext.sql"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="io.vertx.rxjava.ext.sql"/>
+      <attribute name="version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <attribute name="bundle-symbolic-name" value="vertx-sql-common"/>
+      <attribute name="bundle-version" type="Version" value="3.3.0.SNAPSHOT"/>
+      <directive name="uses" value="io.vertx.core,io.vertx.core.json,io.vertx.ext.sql,rx"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.core.json)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=groovy.lang)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.codegen.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=io.vertx.ext.sql)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.lang.groovy)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=io.vertx.rx.java)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.reflection)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.groovy.runtime.typehandling)(version&gt;=2.4.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=rx)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.sql)"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>

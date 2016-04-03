@@ -1,0 +1,4 @@
+-includeresource: \
+	@lib/c3p0-0.9.1.2.jar;version=file
+-exportcontents: *
+DynamicImport-Package: *
