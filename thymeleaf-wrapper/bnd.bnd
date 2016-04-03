@@ -1,0 +1,9 @@
+-includeresource: \
+	@lib/thymeleaf-2.1.4.RELEASE.jar;version=file,\
+	@lib/ognl-3.1.2.jar;version=file,\
+	@lib/nekohtml-1.9.22.jar;version=file
+Export-Package: \
+	org.thymeleaf.*
+Import-Package: \
+	javax.servlet.*;resolution:=optional,\
+	*

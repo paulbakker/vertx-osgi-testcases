@@ -1,0 +1,8 @@
+-includeresource: \
+	@lib/pebble-2.2.1.jar;version=file,\
+	@lib/coverity-escapers-1.1.1.jar;version=file
+Import-Package: \
+	javax.servlet;resolution:=optional,\
+	*
+Export-Package: \
+	com.mitchellbosecke.pebble.*
