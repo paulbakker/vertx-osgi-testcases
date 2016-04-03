@@ -1,13 +1,10 @@
-Test-Cases: vertx.auth.mongo.itest.AuthTest
+Test-Cases: vertx.auth.oauth.itest.AuthTest
 -buildpath: \
 	io.vertx.core,\
 	org.apache.servicemix.bundles.junit,\
 	vertx-unit,\
 	vertx-auth-common,\
-	vertx-auth-mongo,\
-	vertx-mongo-client
-Private-Package: vertx.auth.mongo.itest
--runrequires: osgi.identity;filter:='(osgi.identity=vertx.auth.mongo.itest)'
+	vertx-auth-oauth2
 -runfw: org.apache.felix.framework;version='[5.2.0,5.2.0]'
 -runee: JavaSE-1.8
 -runbundles: \
@@ -22,10 +19,9 @@ Private-Package: vertx.auth.mongo.itest
 	io.netty.transport;version='[4.0.33,4.0.34)',\
 	io.vertx.core;version='[3.3.0,3.3.1)',\
 	org.apache.servicemix.bundles.junit;version='[4.12.0,4.12.1)',\
-	org.mongodb.driver-async;version='[3.2.2,3.2.3)',\
-	org.mongodb.mongo-java-driver;version='[3.2.2,3.2.3)',\
 	vertx-auth-common;version='[3.3.0,3.3.1)',\
-	vertx-auth-mongo;version='[3.3.0,3.3.1)',\
-	vertx-mongo-client;version='[3.3.0,3.3.1)',\
+	vertx-auth-oauth2;version='[3.3.0,3.3.1)',\
 	vertx-unit;version='[3.3.0,3.3.1)',\
-	vertx.auth.mongo.itest;version=snapshot
+	vertx.auth.oauth.itest;version=snapshot
+Private-Package: vertx.auth.oauth.itest
+-runrequires: osgi.identity;filter:='(osgi.identity=vertx.auth.oauth.itest)'
